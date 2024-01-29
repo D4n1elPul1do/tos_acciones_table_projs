@@ -1,4 +1,0 @@
-Mozilla Public License 2.0 - 3.2. Distribution of Executable Form
-
-Link to qds is https://github.com/devexperts/QD
-Link to uilocalizer is https://github.com/devexperts/uilocalizer
