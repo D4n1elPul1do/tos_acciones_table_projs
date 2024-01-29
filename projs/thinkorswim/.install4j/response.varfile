@@ -1,0 +1,9 @@
+# install4j response file for thinkorswim desktop
+ackLicenseValue=true
+create_icon$Boolean=false
+executeLauncherAction$Boolean=true
+installFor=me
+sys.adminRights$Boolean=true
+sys.installationDir=/home/ubuntu/dev/tos4_07/thinkorswim
+sys.languageId=en
+userDomain=tda

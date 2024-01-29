@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://198.200.170.230/jreupdater/" href="https://198.200.170.230/jreupdater/jreupdater.jnlp?whitelabel=tos" spec="1.0">
+    	
+    <information>
+        		
+        <title>Thinkorswim Installer Updater</title>
+        		
+        <vendor>Thinkorswim</vendor>
+        		
+        <version>1975.0.43</version>
+        	
+    		<newPatchMethod/>
+</information>
+    	
+    <security>
+        		
+        <all-permissions/>
+        	
+    </security>
+    	
+    <resources>
+                
+        <j2se href="http://java.sun.com/products/autodl/j2se" version="1.7+"/>
+        		
+        <jar href="install4j_mac-20220218.jar" main="false" md5="1c231a7c3d7a1157031c9dc73d12f7" os="mac" size="1965577" version="1975.0.43"/>
+        		
+        <jar href="launcher.jar" main="false" md5="767014b5b658be499346ae44877d81a4" size="23020" version="1975.0.43"/>
+        		
+        <jar href="mac64-11.45.28-sa-jre11.0.10.jar" jreBitness="64" main="false" md5="faa6dae01dd0566de079fe73c8e91ad6" os="mac" size="36730172" version="1975.0.43"/>
+        		
+        <jar href="svg-salamander-1.1.2.2.jar" main="false" md5="861175a3b24d61b341f312a260bff75" size="314006" version="1975.0.43"/>
+        		
+        <jar href="tos-jreupdater-1975.0.43.jar" main="true" md5="d39ff1129bfb13e8a9caf67dec7a56" size="16927" version="1975.0.43"/>
+        		
+        <jar href="tos-suit-1975.0.43.jar" main="false" md5="a8a0302e7d3dd6f83fd69403b285679" size="10016683" version="1975.0.43"/>
+        		
+        <jar href="tos-updater-base-1975.0.43.jar" main="false" md5="e5aa0f4bef8dc74b4b8ee166cba1f70" size="17495" version="1975.0.43"/>
+        		
+        <jar href="win32-11.45.28-sa-jre11.0.10.jar" jreBitness="32" main="false" md5="df502df554fd0c1c0fb23f714c1f35" os="windows" size="37790777" version="1975.0.43"/>
+        		
+        <jar href="win64-11.45.28-sa-jre11.0.10.jar" jreBitness="64" main="false" md5="3e7e65a73ce8af6abd31e13675cb128" os="windows" size="36779293" version="1975.0.43"/>
+        	
+    </resources>
+        
+    <application-desc main-class="com.devexperts.jreupdater.InstallationUpdater"/>
+    
+</jnlp>

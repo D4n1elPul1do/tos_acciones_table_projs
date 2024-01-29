@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<jnlp spec="1.0" codebase="https://162.93.113.203/suit/" href="https://162.93.113.203/suit/suit.jnlp?whitelabel=tos">
+	<information>
+		<title>Thinkorswim Suit</title>
+		<vendor>Thinkorswim</vendor>
+		<version>1979.2.9</version>
+			<newPatchMethod/>
+</information>
+	<security>
+		<all-permissions/>
+	</security>
+	<resources>
+        <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se"/>
+		<jar href="VeracodeAnnotations-1.2.1.jar" size="11444" md5="ee5a394a3d2ad912b8202596e2749d9e" version="1979.2.9" main="false"/>
+		<jar href="jna-5.7.0.jar" size="1705825" md5="8c6fb0aef15392fc6fcd56c4219533fb" version="1979.2.9" main="false"/>
+		<jar href="jna-platform-5.7.0.jar" size="1481029" md5="a78e74dfd62aba4bd246535037eae8" version="1979.2.9" main="false"/>
+		<jar href="launcher.jar" size="23589" md5="2b4677debbeefab81c7f273dc1e9e8" version="1979.2.9" main="false"/>
+		<jar href="svg-salamander-1.1.2.2.jar" size="314006" md5="861175a3b24d61b341f312a260bff75" version="1979.2.9" main="false"/>
+		<jar href="tos-seahorselaf-base-1979.2.9.jar" size="424988" md5="2a3f75bc578981d0f93cdb5205cba12" version="1979.2.9" main="false"/>
+		<jar href="tos-suit-1979.2.9.jar" size="10441704" md5="20b84ff85030bbc9e59e33dd445d99d" version="1979.2.9" main="true"/>
+		<jar href="tos-updater-base-1979.2.9.jar" size="17486" md5="45513c38bb724befe0f32fc53ff9966" version="1979.2.9" main="false"/>
+		<jar href="toscommon-client-571.5.0.jar" size="260452" md5="8a59419288ab9aa7905ab9d624e7c681" version="1979.2.9" main="false"/>
+	</resources>
+    <application-desc main-class="com.devexperts.jnlp.UpdateManager"/>
+</jnlp>

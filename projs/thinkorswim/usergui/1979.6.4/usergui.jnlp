@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://162.93.113.197/usergui/" href="https://162.93.113.197/usergui/usergui.jnlp?whitelabel=tos" spec="1.0">
+    	
+    <information>
+        		
+        <title>Thinkorswim UserGUI</title>
+        		
+        <vendor>Thinkorswim</vendor>
+        		
+        <version>1979.6.4</version>
+        	
+    		<newPatchMethod/>
+</information>
+    	
+    <security>
+        		
+        <all-permissions/>
+        	
+    </security>
+    	
+    <resources>
+                
+        <j2se href="http://java.sun.com/products/autodl/j2se" version="1.7+"/>
+        		
+        <jar arch="arm" href="BookMap-mac-arm64-20230830.jar" main="false" md5="d36b2ccfa12b6a2370f4d9bd14b4ad4" os="mac" size="243813" version="1979.6.4"/>
+        		
+        <jar href="BookMap-mac64-20230830.jar" main="false" md5="801fde1532bcf128d943c315fa1adcc6" os="mac" size="247455" version="1979.6.4"/>
+        		
+        <jar href="BookMap-win64-20230830.jar" jreBitness="64" main="false" md5="347b6e14c27568eb593fc1c61d17df" os="windows" size="1399374" version="1979.6.4"/>
+        		
+        <jar href="Bookmap-20230830.jar" main="false" md5="1b8249b877762fb85ae57deb5d735a8" size="5836494" version="1979.6.4"/>
+        		
+        <jar href="BookmapRecorder-20230830.jar" main="false" md5="225ad9c4ea7e257e83efe5cba6f7250" size="26725" version="1979.6.4"/>
+        		
+        <jar href="ConfigEncoder-1.17-20140401.jar" main="false" md5="699bb4589faff1a1f32c4c3b88b8fc6" size="49706" version="1979.6.4"/>
+        		
+        <jar href="SparseBitSet-1.2.jar" main="false" md5="9dbf96d51d3211ed47c566a2d43461b2" size="30595" version="1979.6.4"/>
+        		
+        <jar href="TrefisModule-20180702.jar" main="false" md5="ad95167f324b886d1794a64df9c2c936" size="31261" version="1979.6.4"/>
+        		
+        <jar href="VeracodeAnnotations-1.2.1.jar" main="false" md5="29ed1bf6342867e78df43d10a626734c" size="11672" version="1979.6.4"/>
+        		
+        <jar href="activation.jar-1.1-20090401.jar" main="false" md5="ace63b9764cc7137d8808fc2bd1acf5" size="72392" version="1979.6.4"/>
+        		
+        <jar href="annotations-19.0.0.jar" main="false" md5="10d95fb71fba57c8e2da9dcb65c232ad" size="35439" version="1979.6.4"/>
+        		
+        <jar href="asm-7.1.jar" main="false" md5="294714f8f26e71cc7c1d04488c8cff" size="122939" version="1979.6.4"/>
+        		
+        <jar href="auther-api-3.6.2.jar" main="false" md5="7e781ec75e4e817968e24959b9f7926" size="18612" version="1979.6.4"/>
+        		
+        <jar href="bm-dxfeed-20230830.jar" main="false" md5="c9e7e1a7269e64e6914dbce3e8a35351" size="55411" version="1979.6.4"/>
+        		
+        <jar href="bm-l1api-20230830.jar" main="false" md5="bb35f21bd27fd82ecf96d3b118c8bb4a" size="1591364" version="1979.6.4"/>
+        		
+        <jar href="bm-strategies-20230830.jar" main="false" md5="b463b21cf4c537d1f067d93fe85df81" size="155235" version="1979.6.4"/>
+        		
+        <jar href="chartcommon-199.2.0.jar" main="false" md5="7b66ad82cc3f69205e4be6bd22738c0" size="703803" version="1979.6.4"/>
+        		
+        <jar href="chartdescriber-199.2.0.jar" main="false" md5="c480da408777c9052c9994ebb062c4" size="124899" version="1979.6.4"/>
+        		
+        <jar href="checker-qual-2.10.0.jar" main="false" md5="df5a52734c5c4ae9dc1c7919c8eb696" size="234106" version="1979.6.4"/>
+        		
+        <jar href="checker-qual-3.12.0.jar" main="false" md5="9524fe82a5e41d9e3c64bce1c719ce6" size="244205" version="1979.6.4"/>
+        		
+        <jar href="commons-beanutils-1.9.4.jar" main="false" md5="4ae32499c92ae1d035e017c4bc81b56c" size="264454" version="1979.6.4"/>
+        		
+        <jar href="commons-codec-1.9.jar" main="false" md5="7c7bf3501ff296444479232355d2240" size="289541" version="1979.6.4"/>
+        		
+        <jar href="commons-collections4-4.1.jar" main="false" md5="356ca53c8e9cf2285919ec9cd6edbf1" size="803053" version="1979.6.4"/>
+        		
+        <jar href="commons-collections4-4.4.jar" main="false" md5="25252ef82b5b566e3c4c47d217913d84" size="746445" version="1979.6.4"/>
+        		
+        <jar href="commons-compress-1.20.jar" main="false" md5="334f6e4d7e78482c7c1d84a35358210" size="568288" version="1979.6.4"/>
+        		
+        <jar href="commons-httpclient-3.1.jar" main="false" md5="60a79c377daadafcaf2656334bc5f126" size="328272" version="1979.6.4"/>
+        		
+        <jar href="commons-io-2.7.jar" main="false" md5="d0b51fb0f64ed2e9e568e9bbb8fa2961" size="300516" version="1979.6.4"/>
+        		
+        <jar href="commons-lang3-3.12.0.jar" main="false" md5="69e8c479d766aa79dae37fb8555f014" size="629387" version="1979.6.4"/>
+        		
+        <jar href="commons-logging-1.2.jar" main="false" md5="292af9a717461d6558f47b89c5b6d13" size="63434" version="1979.6.4"/>
+        		
+        <jar href="commons-math3-3.6.1.jar" main="false" md5="53771c5e6561f5f336be6ccc8c1dac6" size="1482591" version="1979.6.4"/>
+        		
+        <jar href="concurrentlinkedhashmap-lru-1.4.2.jar" main="false" md5="bbcc253a69e12a844fb7457ebba5bf4" size="129027" version="1979.6.4"/>
+        		
+        <jar href="ddelink-20140303.jar" main="false" md5="dea97cb6e95ffceca1ef5624a7918d" size="59574" version="1979.6.4"/>
+        		
+        <jar href="de.huxhorn.sulky.3rdparty.jlayer-1.0.jar" main="false" md5="5fdd6a129715bc17338db027125891e0" size="118392" version="1979.6.4"/>
+        		
+        <jar href="disruptor-3.4.2.jar" main="false" md5="b4fa9f9e482077e1822bb374309cba" size="96563" version="1979.6.4"/>
+        		
+        <jar href="dxfeed-api-3.320.jar" main="false" md5="4eb2b818df938cc1b83050a457cef" size="305740" version="1979.6.4"/>
+        		
+        <jar href="dxfeed-ondemand-3.320.jar" main="false" md5="5e512168ffce9aad9adff7a45b1482" size="93282" version="1979.6.4"/>
+        		
+        <jar href="dxlib-3.320.jar" main="false" md5="924dae30b04fc86ae3649915be8cad3" size="294452" version="1979.6.4"/>
+        		
+        <jar href="dxprice-repeater-client-82.jar" main="false" md5="ca167d9fa87e3389ca56c2de698fdbe" size="47941" version="1979.6.4"/>
+        		
+        <jar href="error_prone_annotations-2.3.4.jar" main="false" md5="a9cbaa10b25751f0fd7c5ec4eb95c1e3" size="21309" version="1979.6.4"/>
+        		
+        <jar href="error_prone_annotations-2.7.1.jar" main="false" md5="1cd1e9553547673b7a83c9bbef1b4" size="22457" version="1979.6.4"/>
+        		
+        <jar href="failureaccess-1.0.1.jar" main="false" md5="efcf5a6cf495628f4cb8df15b4a95f29" size="10166" version="1979.6.4"/>
+        		
+        <jar href="freehep-jminuit-1.0.2.jar" main="false" md5="415f6e9f6b00e194972d3b8dd03fdd" size="143876" version="1979.6.4"/>
+        		
+        <jar href="fst-2.57.jar" main="false" md5="7ae13a39c4670bd5012242c18be336" size="421749" version="1979.6.4"/>
+        		
+        <jar href="gson-2.2.4-20140422.jar" main="false" md5="55bd8cc3442a6c0a1a81dada3880d3" size="210984" version="1979.6.4"/>
+        		
+        <jar href="guava-31.0.1-jre.jar" main="false" md5="7a9b41d88ddc661d9f139e49344cbec" size="3167830" version="1979.6.4"/>
+        		
+        <jar href="httpclient-4.5.2.jar" main="false" md5="1c2d819ce8d4223249de37be961a54f" size="791516" version="1979.6.4"/>
+        		
+        <jar href="httpcore-4.4.4.jar" main="false" md5="2f87b847839561304648ca7466a1c9" size="354735" version="1979.6.4"/>
+        		
+        <jar href="istack-commons-runtime-3.0.12.jar" main="false" md5="4d5e473d588753ee7954897ba2557eea" size="37538" version="1979.6.4"/>
+        		
+        <jar href="j2objc-annotations-1.3.jar" main="false" md5="e4b159d3949d013b8e93b8975a354a3" size="15506" version="1979.6.4"/>
+        		
+        <jar href="jackson-core-2.11.4.jar" main="false" md5="d6fe571c35472ce67932b3a303bb74f" size="369206" version="1979.6.4"/>
+        		
+        <jar href="jakarta.activation-1.2.2.jar" main="false" md5="a37cf0d3ddb846c5f7361d278054" size="78733" version="1979.6.4"/>
+        		
+        <jar href="jakarta.activation-api-1.2.2.jar" main="false" md5="78446a9a6cda4fc72ff40b71e6a655" size="55523" version="1979.6.4"/>
+        		
+        <jar href="jakarta.xml.bind-api-2.3.3.jar" main="false" md5="af897b3c549311d753abd1edc5d7e7f" size="131183" version="1979.6.4"/>
+        		
+        <jar href="javax.annotation-api-1.3.2.jar" main="false" md5="1536783a25744f4951769cafbace5e" size="33899" version="1979.6.4"/>
+        		
+        <jar href="jaxb-runtime-2.3.4.jar" main="false" md5="eae13bd3243b58ce209f14f51e5d296d" size="1110784" version="1979.6.4"/>
+        		
+        <jar href="jbdiff-20210624.jar" main="false" md5="8ce8455c75ac693ecec5eeeaf5ffede" size="13662" version="1979.6.4"/>
+        		
+        <jar href="jcip-annotations-1.0.jar" main="false" md5="8537f73f2cf95f0bdcfcacb4f4e76" size="7822" version="1979.6.4"/>
+        		
+        <jar href="jcore-finance-1.3.3.jar" main="false" md5="38a76c86222194dc1965cd5c8eaf7996" size="147776" version="1979.6.4"/>
+        		
+        <jar href="jcore-math-1.1.2.jar" main="false" md5="1813ddfb0277b8ddec4e098c8fffe9e" size="53411" version="1979.6.4"/>
+        		
+        <jar href="jcore-utils-1.1.2.jar" main="false" md5="5f69d448ec9158dce88510f3a2adeff" size="75731" version="1979.6.4"/>
+        		
+        <jar href="jna-5.7.0.jar" main="false" md5="28ee49c683a5a1e5614d88e6d939913" size="1706054" version="1979.6.4"/>
+        		
+        <jar href="jna-platform-5.7.0.jar" main="false" md5="fda7ddd71c9bac157122b8181dedc997" size="1481257" version="1979.6.4"/>
+        		
+        <jar href="jni4net.j-0.8.8.0.jar" main="false" md5="e732a97d4c3f8f98bffcf8dfcad614" size="186005" version="1979.6.4"/>
+        		
+        <jar href="joda-time-2.3.jar" main="false" md5="c4c5cad883975b7ede4fd654639ce9a" size="657426" version="1979.6.4"/>
+        		
+        <jar href="jorbis-0.0.17.jar" main="false" md5="b7312259a67a98f6dff1d933888ae5c8" size="109741" version="1979.6.4"/>
+        		
+        <jar href="jql-iv-smile-1.0.6.jar" main="false" md5="f9b1d9a951ea863316f342d856dc41cb" size="49454" version="1979.6.4"/>
+        		
+        <jar href="json-simple-1.1.1-20140905.jar" main="false" md5="1ed3c5819a5d3f238b3857ef3c86266" size="31658" version="1979.6.4"/>
+        		
+        <jar href="jspeex-0.9.7-20071008.jar" main="false" md5="40f2be469de62e8598e5cecad5515a2" size="109236" version="1979.6.4"/>
+        		
+        <jar href="jsr305-3.0.2.jar" main="false" md5="d0ba0ed48905d29a5382b5fca85f26" size="29027" version="1979.6.4"/>
+        		
+        <jar href="jtattoo-stubs-1.0.jar" main="false" md5="ac3d9e750bec6ec3601c7c41bdc067" size="9211" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-7.27.jar" main="false" md5="a96be5204c478924e2ba9c5762ba9d8" size="12970832" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-linux64-7.27.jar" main="false" md5="ad8a95e7881753b73c3f5f5e73d26496" os="linux" size="88196543" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-mac-7.27.jar" main="false" md5="618dca7c6b65e487e64a9adcc875da9" os="mac" size="83256977" version="1979.6.4"/>
+        		
+        <jar arch="arm" href="jxbrowser-mac-arm-7.27.jar" main="false" md5="34d21ba6ac7bf14fec01422d3925c7c" os="mac" size="73340221" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-swing-7.27.jar" main="false" md5="f45fdaaa5f52bab2dba7064d9c8ba51" size="214360" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-win32-7.27.jar" main="false" md5="899f9bd5741ab534797cf9589a33e7ae" os="windows" osBitness="32" size="74593180" version="1979.6.4"/>
+        		
+        <jar href="jxbrowser-win64-7.27.jar" main="false" md5="747d68f0f02ce1ff54bd1886e3c5850" os="windows" osBitness="64" size="78239137" version="1979.6.4"/>
+        		
+        <jar href="jxlayer-20091230.jar" main="false" md5="f4acede260908674ad2e1bebc4cfafba" size="53036" version="1979.6.4"/>
+        		
+        <jar href="launcher.jar" main="false" md5="7dab916f6bd1cb929ecfb95dca11240" size="23818" version="1979.6.4"/>
+        		
+        <jar href="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" main="false" md5="f8ad2af95536fccf3b45d481118142e2" size="7542" version="1979.6.4"/>
+        		
+        <jar href="loadbalancer-api-0.0.8.jar" main="false" md5="4b2e255bb3520b82cbe2cdfab78f631" size="29993" version="1979.6.4"/>
+        		
+        <jar href="loadbalancer-client-0.0.8.jar" main="false" md5="1779fe35a2b0fc11b6c4c137eb40c636" size="40071" version="1979.6.4"/>
+        		
+        <jar href="log4j-1.2-api-2.17.1.jar" main="false" md5="b1def6aa7a029b17458e32edd2d3180" size="224409" version="1979.6.4"/>
+        		
+        <jar href="log4j-api-2.17.1.jar" main="false" md5="8cced83138bf7d0aa2a1febf49f29c2" size="323770" version="1979.6.4"/>
+        		
+        <jar href="log4j-api-2.18.0.jar" main="false" md5="aa334c711847305ba11b98fc4692a28" size="337984" version="1979.6.4"/>
+        		
+        <jar href="log4j-core-2.17.1.jar" main="false" md5="31c1f68bb186cdf2ed772971e3c4f0cf" size="1903384" version="1979.6.4"/>
+        		
+        <jar href="log4j-core-2.18.0.jar" main="false" md5="c87e70ff087c999d7ed16381c1b7e23" size="1981555" version="1979.6.4"/>
+        		
+        <jar href="lz4-java-1.4.0.jar" main="false" md5="ac6279f1baf0ed8af18c19d674f9b02f" size="382323" version="1979.6.4"/>
+        		
+        <jar href="macfilechooser-20190408.jar" main="false" md5="ed8c70ac4d6d2bfbf63fb77ff8a4461d" os="mac" size="29804" version="1979.6.4"/>
+        		
+        <jar href="mars-3.320.jar" main="false" md5="7f2ea4f438fd15145f5237cf4b6d6b59" size="91133" version="1979.6.4"/>
+        		
+        <jar href="mbassador-1.2.3.jar" main="false" md5="419e4380f9e2eeff51c04c9f99719" size="112536" version="1979.6.4"/>
+        		
+        <jar href="migcalendarbean-6.8.6.jar" main="false" md5="ee7b0c563f967747d42376448f8c1e" size="1169754" version="1979.6.4"/>
+        		
+        <jar href="miglayout-3.7.1-swing.jar" main="false" md5="32bfb832462419b5b5569236c5b5b85f" size="83773" version="1979.6.4"/>
+        		
+        <jar href="mina-core-2.0.16.jar" main="false" md5="e7a44043ff9928b38715d6fabc556d9e" size="695383" version="1979.6.4"/>
+        		
+        <jar href="objenesis-2.6.jar" main="false" md5="602369ad52b58954fae1639f03ea95f" size="65029" version="1979.6.4"/>
+        		
+        <jar href="orcs-api-3.4.9.jar" main="false" md5="bc70d7d7873bd828b42b13206e147b" size="21339" version="1979.6.4"/>
+        		
+        <jar href="poi-4.1.2.jar" main="false" md5="d31614131449284fdc516fb23b720d0" size="2822541" version="1979.6.4"/>
+        		
+        <jar href="qds-3.320.jar" main="false" md5="7f8b1221a82ee2faa5d370f59ab4de" size="1525292" version="1979.6.4"/>
+        		
+        <jar href="rtd-20180702.jar" main="false" md5="ac5ba2e0f2d525e8f9962439e9a54fcb" size="108772" version="1979.6.4"/>
+        		
+        <jar href="slf4j-api-1.7.29.jar" main="false" md5="4e319394605d27c47f617e777c70a0bf" size="50332" version="1979.6.4"/>
+        		
+        <jar href="spring-beans-5.3.27.jar" main="false" md5="377214cd6622e9122366dfba63193" size="593082" version="1979.6.4"/>
+        		
+        <jar href="spring-core-5.3.27.jar" main="false" md5="b28ef97c11f0b139941c5e2b412456c5" size="1190190" version="1979.6.4"/>
+        		
+        <jar href="spring-tx-5.3.27.jar" main="false" md5="2d3489f9a690ed2592bc662532ea12c6" size="273391" version="1979.6.4"/>
+        		
+        <jar href="svg-salamander-1.1.2.2.jar" main="false" md5="9e58be80779a2ad36b7639313b8755" size="314237" version="1979.6.4"/>
+        		
+        <jar href="thinkscript-199.2.0.jar" main="false" md5="44804812da5c12d6ae47bad60ce208a" size="3659866" version="1979.6.4"/>
+        		
+        <jar href="tos-clientbase-1979.6.4.jar" main="false" md5="53dceaa7efa3f2681c0e6fc44db57" size="2254540" version="1979.6.4"/>
+        		
+        <jar href="tos-common-account-1979.6.4.jar" main="false" md5="8aa61a6e86a98190387f992ec23af950" size="1225012" version="1979.6.4"/>
+        		
+        <jar href="tos-common-account-math-1979.6.4.jar" main="false" md5="899e26ceed11c9225a963f5aecde4c6" size="239293" version="1979.6.4"/>
+        		
+        <jar href="tos-common-base-1979.6.4.jar" main="false" md5="14ef172eb3458a36716edc19ee7aa3bc" size="179453" version="1979.6.4"/>
+        		
+        <jar href="tos-common-chart-1979.6.4.jar" main="false" md5="09586c6d2337bd5bb3263d1636d36" size="22861" version="1979.6.4"/>
+        		
+        <jar href="tos-common-chat-1979.6.4.jar" main="false" md5="9bb91758d8760c81f35670c631dc35" size="43286" version="1979.6.4"/>
+        		
+        <jar href="tos-common-chat-api-1979.6.4.jar" main="false" md5="9936686b2f91a2492a5ab99208eb3f2" size="45722" version="1979.6.4"/>
+        		
+        <jar href="tos-common-config-1979.6.4.jar" main="false" md5="e9d4a340cfb8d7b081fb918916fd5d62" size="120978" version="1979.6.4"/>
+        		
+        <jar href="tos-common-desktop-1979.6.4.jar" main="false" md5="9261f264d86bbff73c83cf9b9a4" size="1251909" version="1979.6.4"/>
+        		
+        <jar href="tos-common-executor-1979.6.4.jar" main="false" md5="3980a1f24e1333a92ccc6f57c45664" size="110792" version="1979.6.4"/>
+        		
+        <jar href="tos-common-fundamental-impl-1979.6.4.jar" main="false" md5="113679eef273e8f2a94441f4281299f" size="19483" version="1979.6.4"/>
+        		
+        <jar href="tos-common-games-api-1979.6.4.jar" main="false" md5="c13abaa9c163f3b7e638556496cdc" size="11854" version="1979.6.4"/>
+        		
+        <jar href="tos-common-instrument-1979.6.4.jar" main="false" md5="f6fd663ed95cd1699a401146835681b6" size="723087" version="1979.6.4"/>
+        		
+        <jar href="tos-common-media-1979.6.4.jar" main="false" md5="6e804375e769bac283f6ac593763def" size="178101" version="1979.6.4"/>
+        		
+        <jar href="tos-common-monitoring-api-1979.6.4.jar" main="false" md5="92103ccdc4f520454afcc95b7d59e91" size="8152" version="1979.6.4"/>
+        		
+        <jar href="tos-common-notification-1979.6.4.jar" main="false" md5="3630a12db6b618d586b6b5716a22d1" size="34315" version="1979.6.4"/>
+        		
+        <jar href="tos-common-notification-user-1979.6.4.jar" main="false" md5="7a462db01756e78b0f36f7dc2fcbd43" size="29718" version="1979.6.4"/>
+        		
+        <jar href="tos-common-order-1979.6.4.jar" main="false" md5="aabee7d79e21dce7339ea237773496a1" size="1037438" version="1979.6.4"/>
+        		
+        <jar href="tos-common-platform-1979.6.4.jar" main="false" md5="349fa1477638faba85cbc24aaeda" size="26910" version="1979.6.4"/>
+        		
+        <jar href="tos-common-price-1979.6.4.jar" main="false" md5="a536781781d4fe4a9f29bfc7fcc3fc3" size="32340" version="1979.6.4"/>
+        		
+        <jar href="tos-common-risk-1979.6.4.jar" main="false" md5="669139babc96337a037e3159d1a998" size="67843" version="1979.6.4"/>
+        		
+        <jar href="tos-common-routing-1979.6.4.jar" main="false" md5="9440c652519d7a378029abc0725449c3" size="11213" version="1979.6.4"/>
+        		
+        <jar href="tos-common-sharedconfig-1979.6.4.jar" main="false" md5="dd09340bf980713fdee9a89541e91" size="17105" version="1979.6.4"/>
+        		
+        <jar href="tos-common-trading-api-1979.6.4.jar" main="false" md5="5a8bd7d4654ce28755792b8ddfed856" size="20705" version="1979.6.4"/>
+        		
+        <jar href="tos-common-user-1979.6.4.jar" main="false" md5="f3c5e1831571e2f8377b55b9fb33ffe" size="121404" version="1979.6.4"/>
+        		
+        <jar href="tos-common-user-api-1979.6.4.jar" main="false" md5="425d8e6919cb22799a292bb47747085" size="45416" version="1979.6.4"/>
+        		
+        <jar href="tos-common-user-impl-1979.6.4.jar" main="false" md5="4931c478beddb365b8c9c2c1765e9a2" size="241756" version="1979.6.4"/>
+        		
+        <jar href="tos-common-user-integration-1979.6.4.jar" main="false" md5="cbe6bb9722027ad3129a18bec172b4a" size="50893" version="1979.6.4"/>
+        		
+        <jar href="tos-common-watchlist-1979.6.4.jar" main="false" md5="2d2f7e534744d1751464bab9b6fcc9af" size="100571" version="1979.6.4"/>
+        		
+        <jar href="tos-connectivity-1979.6.4.jar" main="false" md5="ba483853c9cc25c5b79ecc8db43ab22d" size="143204" version="1979.6.4"/>
+        		
+        <jar href="tos-endpoint-connector-1979.6.4.jar" main="false" md5="409f3efb73477abfa81a844d9d305e" size="27202" version="1979.6.4"/>
+        		
+        <jar href="tos-frontend-api-1979.6.4.jar" main="false" md5="5d7bb68bbf72ddde1d28da0fea9bc" size="15788" version="1979.6.4"/>
+        		
+        <jar href="tos-frontend-impl-1979.6.4.jar" main="false" md5="bd3951a5e430aced653ee84b596fbb6" size="52494" version="1979.6.4"/>
+        		
+        <jar href="tos-frontend-threads-1979.6.4.jar" main="false" md5="1469d14abf1453e02a47c411daa8d911" size="14985" version="1979.6.4"/>
+        		
+        <jar href="tos-invoker-api-1979.6.4.jar" main="false" md5="cda2c9f9c8e47eff5ef1efc44c7e99" size="83214" version="1979.6.4"/>
+        		
+        <jar href="tos-margining-1979.6.4.jar" main="false" md5="adf576869dcc9fbeb5c563ec7c7332c1" size="335050" version="1979.6.4"/>
+        		
+        <jar href="tos-margining-api-1979.6.4.jar" main="false" md5="c223724d9fe13966ebe569ba88bcc5c" size="49838" version="1979.6.4"/>
+        		
+        <jar href="tos-public-api-instrument-1979.6.4.jar" main="false" md5="ea2abc78dbd1c4a3878ccbc50dc3da2" size="20394" version="1979.6.4"/>
+        		
+        <jar href="tos-seahorselaf-1979.6.4.jar" main="false" md5="7dd25b4ca7ef7816e895c48ed7bcba6" size="11090436" version="1979.6.4"/>
+        		
+        <jar href="tos-seahorselaf-base-1979.6.4.jar" main="false" md5="4b6058a6b9ca9fb02cec134416c698d5" size="425213" version="1979.6.4"/>
+        		
+        <jar href="tos-services-auth-1979.6.4.jar" main="false" md5="ca3f7710f9ed8cec5f1ca65ef52c319" size="73377" version="1979.6.4"/>
+        		
+        <jar href="tos-services-conferencing-1979.6.4.jar" main="false" md5="c57cac8996d24479e9ebb062c47fb34e" size="18404" version="1979.6.4"/>
+        		
+        <jar href="tos-services-media-1979.6.4.jar" main="false" md5="a9288b60efcc32fad8427d4fde383be" size="403027" version="1979.6.4"/>
+        		
+        <jar href="tos-suit-1979.6.4.jar" main="false" md5="42e046cfd052c44ad0e0d3ca1339c5ba" size="10416088" version="1979.6.4"/>
+        		
+        <jar href="tos-tda-proxied-margin-library-1979.6.4.jar" main="false" md5="fa9ab62a94a2ebceab429f7ab59e6f" size="3571852" version="1979.6.4"/>
+        		
+        <jar href="tos-updater-base-1979.6.4.jar" main="false" md5="20e16d502d63db2b74e57f1839855488" size="17715" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-1979.6.4.jar" main="true" md5="7fd41c08d79cb4623a49eef622bb24f" size="336658" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-base-1979.6.4.jar" main="false" md5="2c4b65e39095bfa5a0be9bbbd1d1df69" size="15777131" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-chat-1979.6.4.jar" main="false" md5="c34246210452f82c48f2fe83aa3f55" size="40239" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-games-1979.6.4.jar" main="false" md5="ce35f75ada87edf41227c416acf7fa" size="131270" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-monitor-1979.6.4.jar" main="false" md5="789beeef4be3c7c1dc9e8c139fcbfac" size="954904" version="1979.6.4"/>
+        		
+        <jar href="tos-usergui-realbase-1979.6.4.jar" main="false" md5="9366fa79f63cc25eb9699ecbc49913" size="95723" version="1979.6.4"/>
+        		
+        <jar href="tos-userini-1979.6.4.jar" main="false" md5="65216d91f1f36ddac1d01ecce84b1617" size="7250" version="1979.6.4"/>
+        		
+        <jar href="toschart-199.2.0.jar" main="false" md5="1969e842e6e3fab4b381122e56d17b1" size="8322776" version="1979.6.4"/>
+        		
+        <jar href="toscommon-client-571.6.0.jar" main="false" md5="3a2f23e4f3d34435c977baca1ddef5f9" size="260685" version="1979.6.4"/>
+        		
+        <jar href="toscommon-collections-571.6.0.jar" main="false" md5="92c245cc1234b039dc9b0c8ea6637" size="28441" version="1979.6.4"/>
+        		
+        <jar href="toscommon-core-571.6.0.jar" main="false" md5="57bffa498ff715f37f7c432d2f959d94" size="130418" version="1979.6.4"/>
+        		
+        <jar href="toscommon-cursors-571.6.0.jar" main="false" md5="9c19461fa53eb289bd7615504526b46d" size="247302" version="1979.6.4"/>
+        		
+        <jar href="toscommon-etf-feature-571.6.0.jar" main="false" md5="11778297e7f94c192d8d9ebce9d8eec" size="18415" version="1979.6.4"/>
+        		
+        <jar href="toscommon-instrument-571.6.0.jar" main="false" md5="14e3387f6cc1c286bb40d07f7a44d1b5" size="51607" version="1979.6.4"/>
+        		
+        <jar href="toscommon-localization-571.6.0.jar" main="false" md5="4344ba11ae7c6bc24b5d7de79d23fa1" size="8177" version="1979.6.4"/>
+        		
+        <jar href="toscommon-margining-571.6.0.jar" main="false" md5="565ef339d21db0bffa027b8e75cff" size="167989" version="1979.6.4"/>
+        		
+        <jar href="toscommon-messaging-571.6.0.jar" main="false" md5="ad6b32c97b4160c99e1fdf7b783988f" size="358791" version="1979.6.4"/>
+        		
+        <jar href="toscommon-misc-util-571.6.0.jar" main="false" md5="ef729137951e861ca559e7722690eec8" size="194026" version="1979.6.4"/>
+        		
+        <jar href="toscommon-news-feature-571.6.0.jar" main="false" md5="39b2fe83ae6ffca487557e3935fb3612" size="45094" version="1979.6.4"/>
+        		
+        <jar href="toscommon-research-feature-571.6.0.jar" main="false" md5="b6483d1ee97da96ec86d39cdd842e7" size="17579" version="1979.6.4"/>
+        		
+        <jar href="toscommon-rmi-messaging-571.6.0.jar" main="false" md5="2849ae878dbbb18c5c1129e5bd409094" size="8420" version="1979.6.4"/>
+        		
+        <jar href="toscommon-scanner-feature-571.6.0.jar" main="false" md5="e996be9e92d6ae558a2ac921d98ca90" size="122794" version="1979.6.4"/>
+        		
+        <jar href="toscommon-security-571.6.0.jar" main="false" md5="f9355375d6f6d66c1da3ba5c9cdbc91" size="19280" version="1979.6.4"/>
+        		
+        <jar href="toscommon-serialization-util-571.6.0.jar" main="false" md5="a364b29d5bdb94ee4b6cd22f85094a" size="29367" version="1979.6.4"/>
+        		
+        <jar href="toscommon-ssl-571.6.0.jar" main="false" md5="917e3d16e1ff9252bd132caddc4acc" size="21768" version="1979.6.4"/>
+        		
+        <jar href="toscommon-trading-feature-571.6.0.jar" main="false" md5="e5837b70e0b3a9433ca88acdccf5d9" size="42200" version="1979.6.4"/>
+        		
+        <jar href="txw2-2.3.4.jar" main="false" md5="f4a3b86cee8e710766185bc2b599769" size="82168" version="1979.6.4"/>
+        		
+        <jar href="typetools-0.4.3.jar" main="false" md5="6fdd2d40ac562633df1bef5733898d7" size="19306" version="1979.6.4"/>
+        		
+        <jar href="uilocalizer-api-3.1.jar" main="false" md5="1da31758411dc4f75fe0da3f5d6ff7f" size="7015" version="1979.6.4"/>
+        		
+        <jar href="vlc_mac64-20190604.jar" jreBitness="64" main="false" md5="719bb3d31e5de2b9314b4aafad33e6d" os="mac" size="32926171" version="1979.6.4"/>
+        		
+        <jar arch="arm" href="vlc_mac_arm64-20190604.jar" jreBitness="64" main="false" md5="e3acd34fb834d3fcb85d5afb68c7" os="mac" size="31823622" version="1979.6.4"/>
+        		
+        <jar href="vlc_win32-20190604.jar" jreBitness="32" main="false" md5="c075efe8a5b58da19daf93d2f0b94731" os="windows" size="48201449" version="1979.6.4"/>
+        		
+        <jar href="vlc_win64-20190604.jar" jreBitness="64" main="false" md5="176649c2a534477650bce5866767e412" os="windows" size="50320444" version="1979.6.4"/>
+        		
+        <jar href="vorbis-java-1.0.jar" main="false" md5="d994e11492a9e7cece1d3a35b7233c" size="785471" version="1979.6.4"/>
+        		
+        <jar href="xstream-1.4.18.jar" main="false" md5="8ff2cfcf46e7c69f7b06f9ccee84b74" size="676463" version="1979.6.4"/>
+        	
+    </resources>
+        
+    <application-desc main-class="com.devexperts.tos.ui.user.DesktopStarter"/>
+    
+</jnlp>

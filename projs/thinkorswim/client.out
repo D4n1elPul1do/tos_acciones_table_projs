@@ -1,0 +1,18 @@
+Jan 29, 2024 10:50:37 AM com.devexperts.ssl.UrlStreamHandlerFactoryInstaller install
+INFO: URL stream handler factory installed
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.CustomTrustManager <init>
+INFO: Creating...
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.CustomTrustManager <init>
+INFO: System truststore is enabled
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.CustomTrustManager getSystemTrustManagers
+INFO: Got 1 system trust manager(s)
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.CustomTrustManager <init>
+INFO: External truststore is enabled
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.ExternalTrustManagerFactory getCertificates
+INFO: Creating certificates...
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.ExternalTrustManagerFactory getCertificates
+INFO: Created 3 certificate(s)
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.ExternalTrustManagerFactory getTrustManagers
+INFO: Created 1 trust manager(s) for external certificates
+Jan 29, 2024 10:50:49 AM com.devexperts.ssl.CustomTrustManager <init>
+INFO: The custom trust manager has been created

@@ -1,0 +1,13 @@
+-Xmx9221m
+-Xms8192m
+-Djava.util.Arrays.useLegacyMergeSort=true
+-Dawt.useSystemAAFontSettings=lcd_hrgb
+-Dsun.net.http.allowRestrictedHeaders=true
+-Dsun.java2d.uiScale.enabled=false
+-classpath/p launcher-second.jar
+-Djxbrowser.logging.level=INFO
+-Djxbrowser.linux.deps.check.off=true
+-Dapplication.oauth.enabled=true
+-Djdk.util.jar.version=10
+-DTimeDef.timeZone=America/New_York
+-XX:MaxPermSize=256m

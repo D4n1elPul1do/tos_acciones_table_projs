@@ -1,0 +1,276 @@
+[INFO] Logger started at 2022-09-18 20:26:30
+[INFO] Executable name: /home/ubuntu/Downloads/thinkorswim_installer.sh
+[INFO] install4j version: 9.0.5 (build 9133)
+[INFO] Properties: 
+-- listing properties --
+awt.toolkit=sun.awt.X11.XToolkit
+java.specification.version=11
+install4j.launcherId=5482
+sun.cpu.isalist=
+sun.jnu.encoding=UTF-8
+java.class.path=i4jruntime.jar:launcher0.jar
+sun.awt.enableExtraMouseButtons=true
+java.vm.vendor=Azul Systems, Inc.
+sun.arch.data.model=64
+install4j.exeDir=/home/ubuntu/Downloads/
+sun.font.fontmanager=sun.awt.X11FontManager
+java.vendor.url=http://www.azul.com/
+user.timezone=America/New_York
+os.name=Linux
+java.vm.specification.version=11
+sun.java.launcher=SUN_STANDARD
+user.country=US
+sun.boot.library.path=/usr/lib/jvm/zulu11-ca-amd64/lib
+sun.java.command=install4j.Installer443923295
+jdk.debug=release
+sun.cpu.endian=little
+user.home=/root
+user.language=en
+jdk.http.auth.tunneling.disabledSchemes=
+java.specification.vendor=Oracle Corporation
+java.version.date=2022-07-19
+java.home=/usr/lib/jvm/zulu11-ca-amd64
+file.separator=/
+java.vm.compressedOopsMode=Zero based
+line.separator=
+
+java.specification.name=Java Platform API Specification
+java.vm.specification.vendor=Oracle Corporation
+jdk.vendor.version=Zulu11.58+23-CA
+jdk.lang.Process.allowAmbiguousCommands=false
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+exe4j.moduleName=/home/ubuntu/Downloads/thinkorswim_in...
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=11.0.16.1+1-LTS
+user.name=root
+path.separator=:
+java.net.useSystemProxies=true
+os.version=5.15.0-46-generic
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vendor.version=Zulu11.58+23-CA
+install4j.jvmDir=/usr/lib/jvm/zulu11-ca-amd64
+install4j.cwd=/home/ubuntu/Downloads
+install4j.appDir=/home/ubuntu/Downloads/
+java.vendor.url.bug=http://www.azul.com/support/
+java.io.tmpdir=/tmp
+java.version=11.0.16.1
+user.dir=/home/ubuntu/Downloads/thinkorswim_in...
+os.arch=amd64
+java.vm.specification.name=Java Virtual Machine Specification
+exe4j.totalDataLength=17372976
+java.awt.printerjob=sun.print.PSPrinterJob
+sun.os.patch.level=unknown
+java.library.path=/home/ubuntu/Downloads/thinkorswim_in...
+java.vm.info=mixed mode
+java.vendor=Azul Systems, Inc.
+java.vm.version=11.0.16.1+1-LTS
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=55.0
+install4j.swt=false
+[INFO] Variable changed: sys.resolveUserSpecificInstallationDir=false[class java.lang.String]
+[ERROR] java.lang.NullPointerException
+java.lang.NullPointerException
+	at com.install4j.runtime.installer.config.InstallerConfig.getLanguageById(InstallerConfig.java:598)
+	at com.install4j.runtime.installer.controller.LanguageSelector.initLanguage(LanguageSelector.java:47)
+	at com.install4j.runtime.installer.controller.Controller.start(Controller.java:85)
+	at com.install4j.runtime.installer.Installer.runInProcess(Installer.java:61)
+	at com.install4j.runtime.installer.Installer.main(Installer.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.exe4j.runtime.LauncherEngine.launch(LauncherEngine.java:84)
+	at com.install4j.runtime.launcher.UnixLauncher.start(UnixLauncher.java:69)
+	at install4j.Installer443923295.main(Unknown Source)
+[INFO] System language 'en'
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3169]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_140
+       Property rollbackSupported: false
+       Variable changed: allInstallationDir=/opt/thinkorswim[class java.io.File]
+       Variable changed: myInstallationDir=/root/thinkorswim[class java.io.File]
+       Variable changed: isAppInstalledForAll=false[class java.lang.Boolean]
+       Variable changed: isAppInstalledForMe=false[class java.lang.Boolean]
+       Execute action successful after 3 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 15]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 473]: Show screen
+[INFO] com.install4j.runtime.beans.screens.WelcomeScreen [ID 473]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 4160]: Show screen
+       Variable changed: userDomain=tda[class java.lang.String]
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 4160]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 4334]: Show screen
+       Variable changed: ackLicense=true[class java.lang.Boolean]
+       Variable changed: ackLicenseValue=true[class java.lang.String]
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 4334]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 3043]: Show screen
+       Variable changed: installFor=me[class java.lang.String]
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3108]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_169
+       Property rollbackSupported: false
+       Variable changed: sys.installationDir=/root/thinkorswim[class java.lang.String]
+       Execute action successful after 3 ms
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 3043]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 2]: Show screen
+       Variable changed: sys.installationDir=/home/ubuntu/dev/tos4_07/thinkorswim[class java.lang.String]
+       checking writable with maximum
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 2]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2706]: Show screen
+       Variable changed: create_icon=false[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2706]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 1986]: Show screen
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 1987]: Execute action
+       Property directoryResolverScript: null
+       Property fileFilterScript: null
+       Property sizeCalculatorScript: null
+       Property acceptAllCertificates: false
+       Property checkFreeSpace: true
+       Property delay: false
+       Property installRuntime: true
+       Property rollbackSupported: true
+       Property saveDownloadedFiles: false
+       Property showFileNames: true
+       Property triggerReboot: true
+       Property validateApplicationId: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/thinkorswim.png; size: 443695 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:52 EDT 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/uninstall.png; size: 6648 bytes; exists: false
+       File options set to: [fileTime: Sat Sep 18 06:39:00 EDT 2021, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/jreupdater/index.xml; size: 47 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:58 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/launcher.jar; size: 16097 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/license_en.html; size: 532 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:52 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/license_zh_CN.html; size: 403 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/license_zh_TW.html; size: 403 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit.properties; size: 141 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/VeracodeAnnotations-1.2.1.jar; size: 11450 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:54 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/jna-5.7.0.jar; size: 1705844 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/jna-platform-5.7.0.jar; size: 1481311 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/launcher.jar; size: 16097 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/suit.jnlp; size: 1710 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/svg-salamander-1.1.2.2.jar; size: 314010 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/tos-suit-1974.0.41.jar; size: 9799896 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:58 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/tos-updater-base-1974.0.41.jar; size: 17531 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/toscommon-client-523.0.jar; size: 263269 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/tzdata-20180503.jar; size: 359434 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1974.0.41/ziupdater-1.0.1.2.jar; size: 284874 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/index.xml; size: 49 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/thinkorswim; size: 13593 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:12:04 EDT 2022, mode: 755, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/thinkorswim.vmoptions; size: 145 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:52 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/uninstall; size: 15674 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:12:04 EDT 2022, mode: 700, overwriteMode: If newer otherwise ask, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/zacinst.ini; size: 126 bytes; exists: false
+       File options set to: [fileTime: Wed Mar 30 05:10:52 EDT 2022, mode: 644, overwriteMode: Always ask except for update, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/inst_jre.cfg; size: 29 bytes; exists: false
+       File options set to: [fileTime: Sun Sep 18 20:27:02 EDT 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4jruntime.jar; size: 2006274 bytes; exists: false
+       File options set to: [fileTime: Sun Sep 18 20:27:02 EDT 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/MessagesDefault; size: 34776 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4jparams.conf; size: 135540 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/stats.properties; size: 355 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4jempty.ttf; size: 1004 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user.jar; size: 98469 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/launcher0.jar; size: 723 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/launcher2bfa42ba.jar; size: 764 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/launcher8ee4fbfc.jar; size: 820 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_zh_CN.png; size: 10110 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_zh_CN@2x.png; size: 23348 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_en.png; size: 10110 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_en@2x.png; size: 23348 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_zh_TW@2x.png; size: 23348 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/flatlaf.jar; size: 581614 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/user/tosbanner_zh_TW.png; size: 10110 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_9_7caten_21sm7h.ico; size: 87535 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/libi4jinst.dylib; size: 233376 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_10_7caten_18gg8kx@2x_dark.png; size: 15837 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_5_7caten.properties; size: 4322 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/libi4jinst2.dylib; size: 67472 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_11_7caten_1klufda.png; size: 1064 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_0_7caten.utf8; size: 34776 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_3_7caten.properties; size: 4324 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_4_7caten.utf8; size: 27656 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_6_7caten.html; size: 532 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_10_7caten_18gg8kx.png; size: 9202 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_7_7caten.html; size: 403 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_10_7caten_18gg8kx@2x.png; size: 15419 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_10_7caten_18gg8kx_dark.png; size: 8891 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_1_7caten.properties; size: 3353 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_2_7caten.utf8; size: 28346 bytes; exists: false
+       Install file: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/i4j_extf_8_7caten.html; size: 403 bytes; exists: false
+       Execute action successful after 128 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 2504]: Execute action
+       Property icon: i4j_extf_9_7caten_21sm7h.ico
+       Property iconSource: Custom icon
+       Property itemName: thinkorswim
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 3309]: Execute action
+       Property categories: Application
+       Property linkDirectory: 
+       Property programGroupEntryConfigs: [ProgramGroupFileConfig{target=thinkorswim, arguments='', runAsAdministrator=false}]
+       Property programGroupName: thinkorswim
+       Property uninstallerMenuName: thinkorswim Uninstaller
+       Property addDefaultLauncherLinks: true
+       Property addUninstaller: false
+       Property allUsers: true
+       Property failForSymlinksNotCreated: false
+       Property rollbackSupported: true
+       Property unixMenuEntries: true
+       Property unixSymlinks: true
+       Variable changed: sys.programGroupName=thinkorswim[class java.lang.String]
+       Variable changed: sys.symlinkDir=/usr/local/bin[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3517]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_193
+       Property rollbackSupported: false
+       Execute action successful after 120 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 1986]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 9]: Show screen
+       Variable changed: executeLauncherAction=true[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.actions.misc.RunExecutableAction [ID 5279]: Execute action
+       Property arguments: [logging of arguments is disabled]
+       Property environmentVariables: {}
+       Property executable: thinkorswim
+       Property returnCodeVariable: 
+       Property rollbackArguments: null
+       Property rollbackExecutable: null
+       Property rollbackWorkingDirectory: null
+       Property stderrFile: null
+       Property stderrRedirectionMode: No redirection
+       Property stderrVariableName: 
+       Property stdinFile: null
+       Property stdinRedirectionMode: No redirection
+       Property stdinString: 
+       Property stdoutFile: null
+       Property stdoutRedirectionMode: No redirection
+       Property stdoutVariableName: 
+       Property timeout: 0
+       Property workingDirectory: /home/ubuntu/dev/tos4_07/thinkorswim
+       Property failOnStderrFileError: false
+       Property failOnStdinFileError: false
+       Property failOnStdoutFileError: false
+       Property includeParentEnvironmentVariables: true
+       Property keepConsoleWindow: false
+       Property logArguments: false
+       Property rollbackSupported: false
+       Property showWindowsConsole: false
+       Property updateStderrVariableLines: false
+       Property updateStdoutVariableLines: false
+       Property useRollbackExecutable: false
+       Property wait: false
+       Property waitForStreams: true
+       used working dir: /home/ubuntu/dev/tos4_07/thinkorswim
+       Execute action successful after 537 ms
+[INFO] com.install4j.runtime.beans.screens.FinishedScreen [ID 9]: command: finish
+       cleaning up
+       Finished at 2022-09-18 20:27:05

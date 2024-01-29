@@ -1,0 +1,15 @@
+application.login=dan7pul7
+application.server_url=thinkorswim-desktop1.schwab.com:443,thinkorswim-desktop2.schwab.com:443,thinkorswim-desktop3.schwab.com:443
+application.login.suffix=@schwab
+application.language=en-US
+proxy.list=
+application.lafsize=Small
+application.controlssize=tight
+application.plaf=com.devexperts.tos.ui.user.plaf.TosDarkLookAndFeel
+application.log.symbols.list=
+application.connection_string=(thinkorswim-desktop1.schwab.com:443,thinkorswim-desktop2.schwab.com:443,thinkorswim-desktop3.schwab.com:443)(papermoney-desktop.schwab.com:443)
+installer.launch.param.0=null
+application.remember_user=true
+application.usesystemfonts=false
+application.phone_signature=KMTOkEw2WWHienKO1EFVgvAf0ztyHbEFSS4CanOb2pAzJvvBT5JArnVffUQGlzXO+DF8Q33RrBrIhnngaK7cdRyHSBCTGUyjadRx0mdzVOzmGoB+TFa+itRycXRJjE176lojhLMIZYLmLCTR4w3h2fVocueIYO8o96JtaWzxxLFnvJsESb41pvKZ5OQSVMZxdYeA3KmwFYprwUUC0oTXD8g9ms4knGtuCgMFLeDI7EbfoShLRXtZog4tA4SPoJ5tZLfEWmrOSx5RAcMa4Ddp/a2ouq0Vcx6d7zBsPokY0gTW67vuiWPvOumCyBvxv2NN1WFiJMFux1g+sl0i14qtmA==
+application.techsupport_phone=800-672-2098

@@ -1,0 +1,898 @@
+29.01.24 10:50:06:087 suit INFO: [UpdateManager-6018] Cleanup...
+29.01.24 10:50:06:088 suit INFO: [UpdateManager-6018] Cleanup: failed to get bundled jre path
+29.01.24 10:50:06:088 suit INFO: [UpdateManager-6018] Cleanup: Removing temporary font cache.
+29.01.24 10:50:06:099 suit INFO: [removeTmpFiles-6090] removeTmpFiles: no files to cleanup, complete in 6ms.
+29.01.24 10:50:06:119 suit WARNING: fixExecutableScript: Error while patching. java.lang.Exception: Start script cannot be patched because has unknown state
+	at com.devexperts.jnlp.platform.impl.unix.linux.LinuxCommandHelper.fixExecutableScript(LinuxCommandHelper.java:226)
+	at com.devexperts.jnlp.platform.impl.unix.linux.LinuxCommandHelper.fixInstalledFilesIfNeeded(LinuxCommandHelper.java:150)
+	at com.devexperts.jnlp.UpdateManager.main(UpdateManager.java:366)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.devexperts.jnlp.Launcher.run(Launcher.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+29.01.24 10:50:06:120 suit INFO: [UpdateManager-6018] Calling registerBrowserPlugin
+29.01.24 10:50:06:121 suit INFO: [UpdateManager-6018] registerBrowserPlugin: we do not have plugin for linux at this time
+29.01.24 10:50:06:121 suit INFO: [UpdateManager-6018] Calling registerProtocols
+29.01.24 10:50:06:134 suit WARNING: registerProtocols failed to execute gconftool-2. java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at java.base/java.lang.Runtime.exec(Runtime.java:416)
+	at java.base/java.lang.Runtime.exec(Runtime.java:313)
+	at com.devexperts.jnlp.platform.impl.unix.linux.LinuxCommandHelper.registerProtocols(LinuxCommandHelper.java:54)
+	at com.devexperts.jnlp.platform.Platform.integrate(Platform.java:315)
+	at com.devexperts.jnlp.UpdateManager.main(UpdateManager.java:371)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.devexperts.jnlp.Launcher.run(Launcher.java:32)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 13 more
+
+29.01.24 10:50:06:135 suit INFO: [UpdateManager-6018] Registering RTD server
+29.01.24 10:50:06:136 suit INFO: [UpdateManager-6018] registerRealTimeDataServer: we do not have RTD implementation for linux
+29.01.24 10:50:06:140 suit INFO: [UpdateManager-6018] UpdateManager.main - Is isAutologinRun: false
+29.01.24 10:50:06:145 suit INFO: [UpdateManager-6018] SanitizeUtil - checking: filePath=/root/.thinkorswim; appRoot=/root
+29.01.24 10:50:06:146 suit INFO: [UpdateManager-6018] ActiveInstance: SHARED_FOLDER is /root/.thinkorswim
+29.01.24 10:50:06:147 suit INFO: [UpdateManager-6018] ActiveInstance: SHARED_FOLDER is not created. Is exist? true
+29.01.24 10:50:06:149 suit INFO: [UpdateManager-6018] UpdateManager.main - Is sharedConfigurationRun: false
+29.01.24 10:50:06:150 suit INFO: [UpdateManager-6018] UpdateManager.main - Another copy of application is already started: false
+29.01.24 10:50:06:150 suit INFO: [UpdateManager-6018] UpdateManager.main - Force use this instance: false
+29.01.24 10:50:06:162 suit INFO: [UpdateManager-6018] Starting observer
+29.01.24 10:50:06:164 suit INFO: [UpdateManager-6018] UpdateManager.main - CODE BASE = thinkorswim-desktop2.schwab.com:443,thinkorswim-desktop1.schwab.com:443
+29.01.24 10:50:06:165 suit INFO: [UpdateManager-6018] UpdateManager.updateLauncherJar
+29.01.24 10:50:06:166 suit INFO: [UpdateManager-6018] LauncherUpdater.update
+29.01.24 10:50:06:166 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:06:167 suit INFO: [UpdateManager-6018] Using vmoptions: /home/ubuntu/dev/tos4_07/thinkorswim/thinkorswim.vmoptions
+29.01.24 10:50:06:168 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:06:169 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:06:193 suit INFO: [UpdateManager-6018] launcher jar is up to date
+29.01.24 10:50:06:194 suit INFO: [UpdateManager-6018] LauncherUpdater.cleanup
+29.01.24 10:50:06:194 suit INFO: [UpdateManager-6018] Using vmoptions: /home/ubuntu/dev/tos4_07/thinkorswim/thinkorswim.vmoptions
+29.01.24 10:50:06:195 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:06:195 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:06:208 suit INFO: [UpdateManager-6018] creating UpdateManager: module =suit serverUrls=thinkorswim-desktop2.schwab.com:443,thinkorswim-desktop1.schwab.com:443 extModule=usergui args=[]
+29.01.24 10:50:06:723 suit INFO: [UpdateManager-6018] Translucency is not supported on Linux due glitches.
+29.01.24 10:50:06:769 suit INFO: [UpdateManager-6018] UpdateFrame.getSvgLogo: loginStyle={OAuth=LMS, live=true}; domainType=Schwab
+29.01.24 10:50:07:106 suit INFO: [UpdateManager-6018] UpdaterFrameManager: Checking for new version of suit
+29.01.24 10:50:07:109 suit INFO: [UpdateManager-6018] getCurrentVersion - getVersionInfo:
+29.01.24 10:50:07:110 suit INFO: [UpdateManager-6018] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/suit/index.xml
+29.01.24 10:50:07:110 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=java.io.FileInputStream@62dcc915
+29.01.24 10:50:07:113 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.3.6
+29.01.24 10:50:07:122 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:07:122 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:07:123 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:07:124 suit INFO: [UpdateManager-6018] isUptodate:
+29.01.24 10:50:07:126 suit INFO: [UpdateManager-6018] URLManager.initURLs - servers shuffled: [thinkorswim-desktop1.schwab.com:443, thinkorswim-desktop2.schwab.com:443]
+29.01.24 10:50:07:134 suit INFO: [UpdateManager-6018] URLManager.initURLs - server_urls=thinkorswim-desktop2.schwab.com:443,thinkorswim-desktop1.schwab.com:443; shuffled (if any) servers=[thinkorswim-desktop1.schwab.com:443, thinkorswim-desktop2.schwab.com:443]; shuffle is enabled
+29.01.24 10:50:34:816 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=sun.net.www.protocol.http.HttpURLConnection$HttpInputStream@42cdcdb
+29.01.24 10:50:34:818 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.3.6
+29.01.24 10:50:34:818 suit INFO: [UpdateManager-6018] getIndexFile: updateIndex= true
+29.01.24 10:50:34:819 suit INFO: [UpdateManager-6018] ModuleManager.isUptodate - getVersionInfo:
+29.01.24 10:50:34:819 suit INFO: [UpdateManager-6018] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/suit/index.xml
+29.01.24 10:50:34:819 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=java.io.FileInputStream@7f65c901
+29.01.24 10:50:34:820 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.3.6
+29.01.24 10:50:34:820 suit INFO: [UpdateManager-6018] info.getCurrentVersion() =1979.3.6
+29.01.24 10:50:34:820 suit INFO: [UpdateManager-6018] isUptodate: newVersion =1979.3.6
+29.01.24 10:50:34:821 suit INFO: [UpdateManager-6018] isUptodate: result =true
+29.01.24 10:50:34:828 suit INFO: [UpdateManager-6018] IOUtils.safeRenameFile - started: to=suit.properties; from=/home/ubuntu/dev/tos4_07/thinkorswim/suit.properties.tmp6799182377074692654; backup=suit.properties.bak; keepBackup=true
+29.01.24 10:50:34:830 suit INFO: [UpdateManager-6018] isModuleUptodate: newVersion=1979.3.6 result=true
+29.01.24 10:50:34:831 suit INFO: [UpdateManager-6018] UpdateManager.main - Suit is up to date
+29.01.24 10:50:34:832 suit INFO: [UpdateManager-6018] Starting insert suit's files
+29.01.24 10:50:34:833 suit INFO: [UpdateManager-6018] Starting read install4j's files.log from: /home/ubuntu/dev/tos4_07/thinkorswim/.install4j/files.log
+29.01.24 10:50:34:834 suit INFO: [UpdateManager-6018] install4j's files.log successfully red, it contains 245 lines
+29.01.24 10:50:34:834 suit INFO: [UpdateManager-6018] Suit folder is /home/ubuntu/dev/tos4_07/thinkorswim/suit/1979.3.6
+29.01.24 10:50:34:837 suit INFO: [UpdateManager-6018] Suit folder contains not file: /home/ubuntu/dev/tos4_07/thinkorswim/suit/1979.3.6
+29.01.24 10:50:34:838 suit INFO: [UpdateManager-6018] Starting insert entries
+29.01.24 10:50:34:839 suit INFO: [UpdateManager-6018] Files entries were successfully inserted
+29.01.24 10:50:34:839 suit INFO: [UpdateManager-6018] Folders entries were successfully inserted
+29.01.24 10:50:34:839 suit INFO: [UpdateManager-6018] Nothing to save in files.log
+29.01.24 10:50:34:839 suit INFO: [UpdateManager-6018] UpdaterFrameManager: Checking for new version of jreupdater
+29.01.24 10:50:34:840 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:34:840 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:34:840 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:34:841 suit INFO: [UpdateManager-6018] isUptodate:
+29.01.24 10:50:35:203 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=sun.net.www.protocol.http.HttpURLConnection$HttpInputStream@1d60204b
+29.01.24 10:50:35:204 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.1.0
+29.01.24 10:50:35:204 suit INFO: [UpdateManager-6018] getIndexFile: updateIndex= true
+29.01.24 10:50:35:205 suit INFO: [UpdateManager-6018] ModuleManager.isUptodate - getVersionInfo:
+29.01.24 10:50:35:205 suit INFO: [UpdateManager-6018] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/jreupdater/index.xml
+29.01.24 10:50:35:205 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=java.io.FileInputStream@660cc106
+29.01.24 10:50:35:205 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.1.0
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] info.getCurrentVersion() =1979.1.0
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] isUptodate: newVersion =1979.1.0
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] isUptodate: result =true
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] isModuleUptodate: newVersion=1979.1.0 result=true
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] UpdateManager.main - jreupdater is up to date.
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] checkRequireJreOrLaterInstalled: java version 11.0.21
+29.01.24 10:50:35:206 suit INFO: [UpdateManager-6018] checkRequireJreOrLaterInstalled: java version ok
+29.01.24 10:50:35:207 suit INFO: [UpdateManager-6018] UpdaterFrameManager: Checking for new version of usergui
+29.01.24 10:50:35:207 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:35:208 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:35:208 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:35:208 suit INFO: [UpdateManager-6018] isUptodate:
+29.01.24 10:50:35:511 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=sun.net.www.protocol.http.HttpURLConnection$HttpInputStream@7b2ce649
+29.01.24 10:50:35:512 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:35:512 suit INFO: [UpdateManager-6018] getIndexFile: updateIndex= true
+29.01.24 10:50:35:512 suit INFO: [UpdateManager-6018] ModuleManager.isUptodate - getVersionInfo:
+29.01.24 10:50:35:512 suit INFO: [UpdateManager-6018] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:35:512 suit INFO: [UpdateManager-6018] getVersionInfo: InputStream=java.io.FileInputStream@c1113e6
+29.01.24 10:50:35:513 suit INFO: [UpdateManager-6018] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:35:513 suit INFO: [UpdateManager-6018] info.getCurrentVersion() =1979.6.4
+29.01.24 10:50:35:513 suit INFO: [UpdateManager-6018] isUptodate: newVersion =1979.6.4
+29.01.24 10:50:35:513 suit INFO: [UpdateManager-6018] isUptodate: result =true
+29.01.24 10:50:35:513 suit INFO: [UpdateManager-6018] isModuleUptodate: newVersion=1979.6.4 result=true
+29.01.24 10:50:35:514 suit INFO: [UpdateManager-6018] UpdateManager.update - started: module=usergui; updateIndex=true
+29.01.24 10:50:35:515 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:35:515 suit INFO: [UpdateManager-6018] AppInfo: nativeLauncherName=thinkorswim
+29.01.24 10:50:35:515 suit INFO: [UpdateManager-6018] Ignored legacy VM option: XX:MaxPermSize
+29.01.24 10:50:35:516 suit INFO: [UpdateManager-6018] ModuleManager.startUpdate - module=usergui; updateIndex=true
+29.01.24 10:50:35:516 suit INFO: [UpdateManager-6018] ModuleManager.startUpdate - starting thread ModuleManager-35516
+29.01.24 10:50:35:516 suit INFO: [ModuleManager-35516] getIndexFile: updateIndex= true
+29.01.24 10:50:35:517 suit INFO: [ModuleManager-35516] ModuleManager.getCurrentVersion - from usergui/index.xml
+29.01.24 10:50:35:517 suit INFO: [ModuleManager-35516] getVersion: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:35:517 suit INFO: [ModuleManager-35516] getVersionInfo: InputStream=java.io.FileInputStream@634b8d39
+29.01.24 10:50:35:518 suit INFO: [ModuleManager-35516] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:35:518 suit INFO: [ModuleManager-35516] Client side: usergui; 1979.6.4
+29.01.24 10:50:35:519 suit INFO: [ModuleManager-35516] usergui: Loading index file.
+29.01.24 10:50:35:519 suit INFO: [AWT-EventQueue-0] UpdaterFrameManager: Loading index file.
+29.01.24 10:50:35:821 suit INFO: [ModuleManager-35516] initializeIfNecessary - getVersionInfo:
+29.01.24 10:50:35:822 suit INFO: [ModuleManager-35516] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml.tmp7190663198932294084
+29.01.24 10:50:35:822 suit INFO: [ModuleManager-35516] getVersionInfo: InputStream=java.io.FileInputStream@1dd78fdb
+29.01.24 10:50:35:823 suit INFO: [ModuleManager-35516] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:35:824 suit INFO: [ModuleManager-35516] Server side: usergui; VersionInfo: current=1979.6.4; download=[1979.6.4]; keep=[1979.6.4]
+29.01.24 10:50:35:824 suit INFO: [ModuleManager-35516] usergui: Loading JNLP file from https://162.93.113.197
+29.01.24 10:50:35:824 suit INFO: [AWT-EventQueue-0] UpdaterFrameManager: Loading JNLP file from https://162.93.113.197
+29.01.24 10:50:36:366 suit INFO: [ModuleManager-35516] usergui: Downloading usergui v.1979.6.4 
+29.01.24 10:50:36:366 suit INFO: [AWT-EventQueue-0] UpdaterFrameManager: Downloading usergui v.1979.6.4 
+29.01.24 10:50:36:366 suit INFO: [ModuleManager-35516] usergui: Estimating number of libraries to download for module 'usergui'....
+29.01.24 10:50:36:367 suit INFO: [AWT-EventQueue-0] UpdaterFrameManager: Estimating number of libraries to download for module 'usergui'....
+29.01.24 10:50:36:369 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/Bookmap-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:369 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookmapRecorder-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:370 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ConfigEncoder-1.17-20140401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:370 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/SparseBitSet-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:371 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/TrefisModule-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:371 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/VeracodeAnnotations-1.2.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:371 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/activation.jar-1.1-20090401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:371 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/annotations-19.0.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:372 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/asm-7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:372 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/auther-api-3.6.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:372 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-dxfeed-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:373 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-l1api-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:373 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-strategies-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:373 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartcommon-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:373 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartdescriber-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:373 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-2.10.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:374 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:374 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-beanutils-1.9.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:374 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-codec-1.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:374 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:374 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:375 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-compress-1.20.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:375 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-httpclient-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:375 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-io-2.7.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:375 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-lang3-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:375 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-logging-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-math3-3.6.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/concurrentlinkedhashmap-lru-1.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ddelink-20140303.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/de.huxhorn.sulky.3rdparty.jlayer-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/disruptor-3.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:376 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-api-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:377 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-ondemand-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:377 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxlib-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:377 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxprice-repeater-client-82.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:378 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:378 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:378 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/failureaccess-1.0.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:378 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/freehep-jminuit-1.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:379 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/fst-2.57.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:379 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/gson-2.2.4-20140422.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:379 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/guava-31.0.1-jre.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:379 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpclient-4.5.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:380 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpcore-4.4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:380 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/istack-commons-runtime-3.0.12.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:380 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/j2objc-annotations-1.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:380 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jackson-core-2.11.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:381 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:381 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-api-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:381 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.xml.bind-api-2.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:381 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/javax.annotation-api-1.3.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:381 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jaxb-runtime-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:382 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jbdiff-20210624.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:382 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcip-annotations-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:382 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-finance-1.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:382 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-math-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:382 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-utils-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:383 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:383 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-platform-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:383 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jni4net.j-0.8.8.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:383 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/joda-time-2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:383 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jorbis-0.0.17.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:384 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jql-iv-smile-1.0.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:384 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/json-simple-1.1.1-20140905.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:384 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jspeex-0.9.7-20071008.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:384 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jsr305-3.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:385 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jtattoo-stubs-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:385 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:385 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-linux64-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:386 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-swing-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:386 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxlayer-20091230.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:386 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/launcher.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:386 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:386 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-api-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:387 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-client-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:387 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-1.2-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:387 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:387 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:388 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:388 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:388 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/lz4-java-1.4.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:388 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mars-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:389 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mbassador-1.2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:389 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/migcalendarbean-6.8.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:389 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/miglayout-3.7.1-swing.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:389 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mina-core-2.0.16.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:389 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/objenesis-2.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:390 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/orcs-api-3.4.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:390 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/poi-4.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:390 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/qds-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:390 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/rtd-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:391 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/slf4j-api-1.7.29.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:391 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-beans-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:391 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-core-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:391 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-tx-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:391 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/svg-salamander-1.1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:392 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/thinkscript-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:392 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-clientbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:392 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:392 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-math-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chart-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-config-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:393 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-desktop-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:394 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-executor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:394 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-fundamental-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:394 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-games-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:394 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:394 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-monitoring-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-order-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-platform-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:395 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-price-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:396 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-risk-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:396 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-routing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:396 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-sharedconfig-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:396 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-trading-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:397 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:397 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:397 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:397 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-integration-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:397 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-watchlist-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-connectivity-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-endpoint-connector-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-threads-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:398 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-invoker-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-public-api-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:399 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-auth-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:400 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-conferencing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:400 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:400 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-suit-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:400 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-tda-proxied-margin-library-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:400 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-updater-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-games-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-monitor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-realbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:401 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-userini-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toschart-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-client-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-collections-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-core-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-cursors-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:402 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-etf-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-instrument-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-localization-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-margining-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-misc-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-news-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:403 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-research-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:404 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-rmi-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:404 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-scanner-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:404 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-security-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:404 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-serialization-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:404 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-ssl-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-trading-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/txw2-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/typetools-0.4.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/uilocalizer-api-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vorbis-java-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:405 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/xstream-1.4.18.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] All resources are up-to-date
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/Bookmap-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookmapRecorder-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ConfigEncoder-1.17-20140401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/SparseBitSet-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:406 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/TrefisModule-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:407 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/VeracodeAnnotations-1.2.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:407 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/activation.jar-1.1-20090401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:407 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/annotations-19.0.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:407 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/asm-7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:408 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/auther-api-3.6.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:408 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-dxfeed-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:408 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-l1api-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:408 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-strategies-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:409 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartcommon-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:409 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartdescriber-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:409 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-2.10.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:409 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:410 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-beanutils-1.9.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:410 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-codec-1.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:410 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:410 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:410 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-compress-1.20.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:411 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-httpclient-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:411 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-io-2.7.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:411 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-lang3-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:411 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-logging-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:412 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-math3-3.6.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:412 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/concurrentlinkedhashmap-lru-1.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:412 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ddelink-20140303.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:412 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/de.huxhorn.sulky.3rdparty.jlayer-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:412 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/disruptor-3.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:413 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-api-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:413 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-ondemand-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:413 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxlib-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:413 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxprice-repeater-client-82.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:414 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:414 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:414 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/failureaccess-1.0.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:414 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/freehep-jminuit-1.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:414 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/fst-2.57.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:415 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/gson-2.2.4-20140422.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:415 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/guava-31.0.1-jre.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:415 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpclient-4.5.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:415 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpcore-4.4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:415 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/istack-commons-runtime-3.0.12.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:416 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/j2objc-annotations-1.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:416 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jackson-core-2.11.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:416 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:416 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-api-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:416 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.xml.bind-api-2.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:417 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/javax.annotation-api-1.3.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:417 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jaxb-runtime-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:417 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jbdiff-20210624.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:417 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcip-annotations-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:418 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-finance-1.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:418 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-math-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:418 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-utils-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:418 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:419 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-platform-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:419 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jni4net.j-0.8.8.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:419 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/joda-time-2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:419 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jorbis-0.0.17.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:419 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jql-iv-smile-1.0.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:420 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/json-simple-1.1.1-20140905.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:420 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jspeex-0.9.7-20071008.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:420 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jsr305-3.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:420 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jtattoo-stubs-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:420 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-linux64-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-swing-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxlayer-20091230.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/launcher.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:421 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-api-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-client-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-1.2-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:422 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:423 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/lz4-java-1.4.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:423 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mars-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:423 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mbassador-1.2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:423 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/migcalendarbean-6.8.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:423 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/miglayout-3.7.1-swing.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mina-core-2.0.16.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/objenesis-2.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/orcs-api-3.4.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/poi-4.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/qds-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:424 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/rtd-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/slf4j-api-1.7.29.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-beans-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-core-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-tx-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/svg-salamander-1.1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:425 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/thinkscript-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:426 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-clientbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:426 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:426 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-math-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chart-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-config-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:427 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-desktop-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:428 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-executor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:428 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-fundamental-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:428 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-games-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:428 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:428 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-monitoring-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-order-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-platform-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:429 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-price-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:430 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-risk-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:430 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-routing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:430 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-sharedconfig-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:430 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-trading-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-integration-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-watchlist-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-connectivity-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:431 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-endpoint-connector-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-threads-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-invoker-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:432 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-public-api-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:433 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:433 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:433 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-auth-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:433 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-conferencing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:433 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-suit-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-tda-proxied-margin-library-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-updater-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:434 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-games-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-monitor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-realbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-userini-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toschart-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:435 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-client-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-collections-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-core-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-cursors-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-etf-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-instrument-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:436 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-localization-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-margining-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-misc-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-news-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-research-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:437 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-rmi-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:438 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-scanner-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:438 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-security-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:438 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-serialization-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:438 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-ssl-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:438 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-trading-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/txw2-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/typetools-0.4.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/uilocalizer-api-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vorbis-java-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/xstream-1.4.18.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:439 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/1979.6.4/usergui.jnlp; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:440 suit INFO: [ModuleManager-35516] getIndexFile: updateIndex= true
+29.01.24 10:50:36:440 suit INFO: [ModuleManager-35516] getVersion: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:36:440 suit INFO: [ModuleManager-35516] getVersionInfo: InputStream=java.io.FileInputStream@3a054fe0
+29.01.24 10:50:36:441 suit INFO: [ModuleManager-35516] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:36:441 suit INFO: [ModuleManager-35516] saveIndexFile: safeRenameFile - doBackup = true
+29.01.24 10:50:36:441 suit INFO: [ModuleManager-35516] IOUtils.safeRenameFile - started: to=usergui/index.xml; from=usergui/index.xml.tmp7190663198932294084; backup=usergui/index.xml.bak; keepBackup=true
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/Bookmap-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookmapRecorder-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ConfigEncoder-1.17-20140401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/SparseBitSet-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/TrefisModule-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:442 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/VeracodeAnnotations-1.2.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/activation.jar-1.1-20090401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/annotations-19.0.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/asm-7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/auther-api-3.6.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-dxfeed-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-l1api-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-strategies-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:443 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartcommon-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:444 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartdescriber-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:444 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-2.10.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:444 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:444 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-beanutils-1.9.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:444 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-codec-1.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-compress-1.20.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-httpclient-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-io-2.7.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-lang3-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-logging-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:445 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-math3-3.6.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/concurrentlinkedhashmap-lru-1.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ddelink-20140303.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/de.huxhorn.sulky.3rdparty.jlayer-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/disruptor-3.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-api-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-ondemand-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:446 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxlib-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxprice-repeater-client-82.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/failureaccess-1.0.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/freehep-jminuit-1.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/fst-2.57.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/gson-2.2.4-20140422.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:447 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/guava-31.0.1-jre.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpclient-4.5.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpcore-4.4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/istack-commons-runtime-3.0.12.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/j2objc-annotations-1.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jackson-core-2.11.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:448 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:449 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-api-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:449 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.xml.bind-api-2.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:449 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/javax.annotation-api-1.3.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:449 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jaxb-runtime-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:449 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jbdiff-20210624.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcip-annotations-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-finance-1.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-math-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-utils-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:450 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-platform-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jni4net.j-0.8.8.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/joda-time-2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jorbis-0.0.17.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jql-iv-smile-1.0.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/json-simple-1.1.1-20140905.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:451 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jspeex-0.9.7-20071008.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jsr305-3.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jtattoo-stubs-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-linux64-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-swing-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:452 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxlayer-20091230.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/launcher.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-api-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-client-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-1.2-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:453 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/lz4-java-1.4.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mars-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mbassador-1.2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:454 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/migcalendarbean-6.8.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/miglayout-3.7.1-swing.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mina-core-2.0.16.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/objenesis-2.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/orcs-api-3.4.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/poi-4.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/qds-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/rtd-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/slf4j-api-1.7.29.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-beans-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:455 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-core-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-tx-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/svg-salamander-1.1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/thinkscript-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-clientbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-math-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:456 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chart-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-config-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-desktop-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-executor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:457 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-fundamental-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-games-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-monitoring-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:458 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-order-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-platform-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-price-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-risk-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-routing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:459 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-sharedconfig-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-trading-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-integration-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-watchlist-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:460 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-connectivity-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-endpoint-connector-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-threads-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-invoker-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-public-api-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:461 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-auth-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-conferencing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-suit-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-tda-proxied-margin-library-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-updater-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:462 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-games-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-monitor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-realbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-userini-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toschart-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-client-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-collections-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-core-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-cursors-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:463 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-etf-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-instrument-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-localization-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-margining-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-misc-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-news-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:464 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-research-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-rmi-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-scanner-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-security-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-serialization-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-ssl-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-trading-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/txw2-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/typetools-0.4.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:465 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/uilocalizer-api-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:466 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vorbis-java-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:466 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/xstream-1.4.18.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:466 suit INFO: [ModuleManager-35516] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/1979.6.4/usergui.jnlp; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:466 suit INFO: [ModuleManager-35516] Module 'usergui' is up-to-date
+29.01.24 10:50:36:467 suit INFO: [AWT-EventQueue-0] UpdaterFrameManager: Update finished successfully!
+ Start new application version.
+29.01.24 10:50:36:468 suit INFO: [AWT-EventQueue-0] moduleManager.updateIndex = true
+29.01.24 10:50:36:468 suit INFO: [AWT-EventQueue-0] isLocalModuleAvailable:
+29.01.24 10:50:36:468 suit INFO: [AWT-EventQueue-0] getIndexFile: updateIndex= true
+29.01.24 10:50:36:468 suit INFO: [AWT-EventQueue-0] getVersion: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:36:468 suit INFO: [AWT-EventQueue-0] getVersionInfo: InputStream=java.io.FileInputStream@1530cb33
+29.01.24 10:50:36:469 suit INFO: [AWT-EventQueue-0] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:36:469 suit INFO: [AWT-EventQueue-0] ModuleManager.launchModule - getVersionInfo:
+29.01.24 10:50:36:469 suit INFO: [AWT-EventQueue-0] getIndexFile: updateIndex= true
+29.01.24 10:50:36:469 suit INFO: [AWT-EventQueue-0] getVersionInfo: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:36:469 suit INFO: [AWT-EventQueue-0] getVersionInfo: InputStream=java.io.FileInputStream@37cff5a6
+29.01.24 10:50:36:470 suit INFO: [AWT-EventQueue-0] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:36:471 suit INFO: [AWT-EventQueue-0] Launch module usergui; VersionInfo: current=1979.6.4; download=[1979.6.4]; keep=[1979.6.4]
+29.01.24 10:50:36:471 suit INFO: [AWT-EventQueue-0] getIndexFile: updateIndex= true
+29.01.24 10:50:36:471 suit INFO: [AWT-EventQueue-0] getVersion: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:36:471 suit INFO: [AWT-EventQueue-0] getVersionInfo: InputStream=java.io.FileInputStream@3c88849f
+29.01.24 10:50:36:472 suit INFO: [AWT-EventQueue-0] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:36:483 suit INFO: [AWT-EventQueue-0] getIndexFile: updateIndex= true
+29.01.24 10:50:36:483 suit INFO: [AWT-EventQueue-0] getVersion: f.getAbsolutePath=/home/ubuntu/dev/tos4_07/thinkorswim/usergui/index.xml
+29.01.24 10:50:36:483 suit INFO: [AWT-EventQueue-0] getVersionInfo: InputStream=java.io.FileInputStream@7422346d
+29.01.24 10:50:36:484 suit INFO: [AWT-EventQueue-0] getVersionInfo: visitor.getVersion()=1979.6.4
+29.01.24 10:50:36:492 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookMap-mac-arm64-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:493 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookMap-mac64-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:493 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookMap-win64-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:493 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/Bookmap-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:493 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/BookmapRecorder-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:493 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ConfigEncoder-1.17-20140401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:494 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/SparseBitSet-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:494 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/TrefisModule-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:494 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/VeracodeAnnotations-1.2.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:494 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/activation.jar-1.1-20090401.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:494 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/annotations-19.0.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:495 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/asm-7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:495 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/auther-api-3.6.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:495 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-dxfeed-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:495 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-l1api-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:495 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/bm-strategies-20230830.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:496 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartcommon-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:496 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/chartdescriber-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:496 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-2.10.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:496 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/checker-qual-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:496 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-beanutils-1.9.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:497 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-codec-1.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:497 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:497 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-collections4-4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:497 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-compress-1.20.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:497 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-httpclient-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-io-2.7.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-lang3-3.12.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-logging-1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/commons-math3-3.6.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/concurrentlinkedhashmap-lru-1.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:498 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/ddelink-20140303.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/de.huxhorn.sulky.3rdparty.jlayer-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/disruptor-3.4.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-api-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxfeed-ondemand-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxlib-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/dxprice-repeater-client-82.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:499 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/error_prone_annotations-2.7.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/failureaccess-1.0.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/freehep-jminuit-1.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/fst-2.57.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/gson-2.2.4-20140422.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/guava-31.0.1-jre.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpclient-4.5.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:500 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/httpcore-4.4.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/istack-commons-runtime-3.0.12.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/j2objc-annotations-1.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jackson-core-2.11.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.activation-api-1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jakarta.xml.bind-api-2.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:501 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/javax.annotation-api-1.3.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jaxb-runtime-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jbdiff-20210624.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcip-annotations-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-finance-1.3.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-math-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jcore-utils-1.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:502 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jna-platform-5.7.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jni4net.j-0.8.8.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/joda-time-2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jorbis-0.0.17.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jql-iv-smile-1.0.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:503 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/json-simple-1.1.1-20140905.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:504 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jspeex-0.9.7-20071008.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:504 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jsr305-3.0.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:504 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jtattoo-stubs-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:504 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:505 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-linux64-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:505 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-mac-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:505 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-mac-arm-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:505 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-swing-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:505 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-win32-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:506 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxbrowser-win64-7.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:506 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/jxlayer-20091230.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:506 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/launcher.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:506 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:507 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-api-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:507 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/loadbalancer-client-0.0.8.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:507 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-1.2-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:507 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:507 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-api-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:508 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.17.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:508 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/log4j-core-2.18.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:508 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/lz4-java-1.4.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:508 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/macfilechooser-20190408.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:509 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mars-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:509 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mbassador-1.2.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:509 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/migcalendarbean-6.8.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:509 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/miglayout-3.7.1-swing.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:509 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/mina-core-2.0.16.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:510 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/objenesis-2.6.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:510 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/orcs-api-3.4.9.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:510 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/poi-4.1.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:510 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/qds-3.320.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:510 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/rtd-20180702.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/slf4j-api-1.7.29.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-beans-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-core-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/spring-tx-5.3.27.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/svg-salamander-1.1.2.2.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:511 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/thinkscript-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-clientbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-account-math-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chart-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:512 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-chat-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-config-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-desktop-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-executor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-fundamental-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:513 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-games-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-monitoring-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-notification-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:514 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-order-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-platform-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-price-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-risk-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-routing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-sharedconfig-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:515 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-trading-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-user-integration-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-common-watchlist-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:516 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-connectivity-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:517 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-endpoint-connector-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:517 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:517 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-impl-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:517 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-frontend-threads-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:517 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-invoker-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-margining-api-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-public-api-instrument-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-seahorselaf-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-auth-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:518 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-conferencing-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-services-media-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-suit-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-tda-proxied-margin-library-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-updater-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:519 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-base-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:520 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-chat-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:520 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-games-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:520 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-monitor-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:520 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-usergui-realbase-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:520 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/tos-userini-1979.6.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toschart-199.2.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-client-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-collections-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-core-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-cursors-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:521 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-etf-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:522 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-instrument-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:522 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-localization-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:522 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-margining-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:522 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:522 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-misc-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-news-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-research-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-rmi-messaging-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-scanner-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-security-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:523 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-serialization-util-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:524 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-ssl-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:524 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/toscommon-trading-feature-571.6.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:524 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/txw2-2.3.4.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:524 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/typetools-0.4.3.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:524 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/uilocalizer-api-3.1.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vlc_mac64-20190604.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vlc_mac_arm64-20190604.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vlc_win32-20190604.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vlc_win64-20190604.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/vorbis-java-1.0.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim
+29.01.24 10:50:36:525 suit INFO: [AWT-EventQueue-0] SanitizeUtil - checking: filePath=/home/ubuntu/dev/tos4_07/thinkorswim/./1979.6.4/xstream-1.4.18.jar; appRoot=/home/ubuntu/dev/tos4_07/thinkorswim

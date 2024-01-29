@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="https://198.200.170.250/jreupdater/" href="https://198.200.170.250/jreupdater/jreupdater.jnlp?whitelabel=tos" spec="1.0">
+    	
+    <information>
+        		
+        <title>Thinkorswim Installer Updater</title>
+        		
+        <vendor>Thinkorswim</vendor>
+        		
+        <version>1979.1.0</version>
+        	
+    		<newPatchMethod/>
+</information>
+    	
+    <security>
+        		
+        <all-permissions/>
+        	
+    </security>
+    	
+    <resources>
+                
+        <j2se href="http://java.sun.com/products/autodl/j2se" version="1.7+"/>
+        		
+        <jar href="install4j_mac-20220218.jar" main="false" md5="1c231a7c3d7a1157031c9dc73d12f7" os="mac" size="1965577" version="1979.1.0"/>
+        		
+        <jar href="launcher.jar" main="false" md5="2a8dd95cff4e7a92d24d91a1e4d6" size="23584" version="1979.1.0"/>
+        		
+        <jar href="mac64-11.45.28-sa-jre11.0.10-uni.jar" jreBitness="64" main="false" md5="8ec99a3c54e89d399b76d5441d94ed4" os="mac" size="43379692" version="1979.1.0"/>
+        		
+        <jar href="svg-salamander-1.1.2.2.jar" main="false" md5="861175a3b24d61b341f312a260bff75" size="314006" version="1979.1.0"/>
+        		
+        <jar href="tos-jreupdater-1979.1.0.jar" main="true" md5="e518f459f71ac1fb81afeb8c6e11" size="17418" version="1979.1.0"/>
+        		
+        <jar href="tos-seahorselaf-base-1979.1.0.jar" main="false" md5="7c32ace8099d677ed17f8074b9d77c" size="424977" version="1979.1.0"/>
+        		
+        <jar href="tos-suit-1979.1.0.jar" main="false" md5="2a5d286929bf318a6d64c635b33077e8" size="10125667" version="1979.1.0"/>
+        		
+        <jar href="tos-updater-base-1979.1.0.jar" main="false" md5="a6fcb0a2f964a15592ef87f34ee48d" size="17482" version="1979.1.0"/>
+        		
+        <jar href="win32-11.45.28-sa-jre11.0.10.jar" jreBitness="32" main="false" md5="df502df554fd0c1c0fb23f714c1f35" os="windows" size="37790777" version="1979.1.0"/>
+        		
+        <jar href="win64-11.45.28-sa-jre11.0.10.jar" jreBitness="64" main="false" md5="3e7e65a73ce8af6abd31e13675cb128" os="windows" size="36779293" version="1979.1.0"/>
+        	
+    </resources>
+        
+    <application-desc main-class="com.devexperts.jreupdater.InstallationUpdater"/>
+    
+</jnlp>
